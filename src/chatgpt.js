@@ -9,7 +9,9 @@ exports.answer = async (requestText, systemText = "") => {
   if (fs.existsSync(HISTORY_PATH)) {
     historyLog = JSON.parse(fs.readFileSync(HISTORY_PATH, "utf8"));
   } else {
-    historyLog.push({ role: "system", content: systemText });
+    if (systemText) {
+      historyLog.push({ role: "system", content: systemText });
+    }
   }
   historyLog.push({ role: "user", content: requestText });
   const configuration = new Configuration({
