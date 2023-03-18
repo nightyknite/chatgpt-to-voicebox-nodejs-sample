@@ -6,7 +6,7 @@
   "scripts": {
     "sample": "node src/sample.js",
     "chatgpt": "node src/chatgpt.js",
-    "voicebox": "node src/voicebox.js"
+    "voicevox": "node src/voicevox.js"
   },
   "author": "",
   "license": "ISC",
