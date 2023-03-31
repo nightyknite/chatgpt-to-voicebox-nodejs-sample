@@ -30,7 +30,7 @@ exports.answer = async (requestText, systemText = "") => {
 
 if (require.main === module) {
   (async() => {
-    const res = await this.answer("犬はなんと鳴きますか？", "あなたは物知りな博士です。語尾にだぜ、またはぜとつけて話してください。");
+    const res = await this.answer("夜しっかり寝ても日中眠いのはなぜ？", "女の子2人の会話風に説明をしてください。無知なAの質問に対して博識なBが回答する形で話してください。Aの名前は△△△です。Bの名前は○○○です。");
     console.log(res);
   })();  
 }
